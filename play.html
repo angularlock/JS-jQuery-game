@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>My Games</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center">Number Arragement Game</h1>
+        <div class="row">
+            <div class="col-9">
+                <div class="head_control">
+                    <label for="Rows&Column">Difficulty(Rows)</label>
+                    <input type="number" min="3" class="form-control" id="difficulty">
+                </div>
+                <div class="number_pad_wrapper"></div>
+            </div>
+            <div class="col-3">
+                <div class="controls">
+                    <form>
+                        <label for="count">Count</label>
+                        <input type="number" id="count" class="form-control" value="0" disabled>
+                    </form>
+                    <button class="btn btn_reset d-block">RESET</button>
+                    <button class="btn btn_undo d-block">UNDO</button>
+                    <button class="btn btn_redo d-block">REDO</button>
+                    <div class="directions">
+                        <button class="btn btn_up"><i class="fa fa-arrow-up fa-2x" aria-hidden="true"></i>
+                        </button>
+                        <div class="left_right">
+                            <button class="btn btn_left"><i class="fa fa-arrow-left fa-2x" aria-hidden="true"></i>
+                            </button>
+                            <button class="btn btn_right"><i class="fa fa-arrow-right fa-2x" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <button class="btn btn_down"><i class="fa fa-arrow-down fa-2x" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./bootstrap/jquery-3.5.0.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
